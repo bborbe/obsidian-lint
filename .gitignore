@@ -9,3 +9,5 @@
 
 .gemini/
 gha-creds-*.json
+/.update-logs/
+/.mcp-*

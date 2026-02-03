@@ -8,6 +8,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v0.1.2
+
+- Update Go from 1.25.5 to 1.25.6
+- Update github.com/bborbe/* dependencies to latest versions
+- Update github.com/onsi/ginkgo/v2 from v2.26.0 to v2.28.1
+- Update github.com/onsi/gomega from v1.38.2 to v1.39.1
+- Update golang.org/x toolchain dependencies
+
 ## v0.1.1
 
 - Remove unused Gemini CLI GitHub Actions workflows and commands

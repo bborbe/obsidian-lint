@@ -29,7 +29,7 @@ type application struct {
 	SentryDSN   string `required:"false" arg:"sentry-dsn"   env:"SENTRY_DSN"   usage:"SentryDSN (optional)"      display:"length"`
 	SentryProxy string `required:"false" arg:"sentry-proxy" env:"SENTRY_PROXY" usage:"Sentry Proxy"`
 	Vault       string `required:"true"  arg:"vault"        env:"VAULT"        usage:"vault directory path"`
-	Format      string `required:"false" arg:"format"       env:"FORMAT"       usage:"output format (text|json)" default:"text"`
+	Format      string `required:"false" arg:"format"       env:"FORMAT"       usage:"output format (text|json)"                  default:"text"`
 }
 
 func (a *application) Run(ctx context.Context, sentryClient libsentry.Client) error {
