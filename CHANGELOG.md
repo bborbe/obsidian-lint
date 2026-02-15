@@ -8,6 +8,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- Update Go to 1.26.0
+- Update GitHub Actions workflows to use checkout@v6
+- Switch Claude Code review workflow to label-triggered activation
+- Update multiple dependency versions including bborbe packages, Google OSV scanner, and golang.org/x packages
+
 ## v0.1.3
 
 - Update GitHub workflows to v1 plugin system
