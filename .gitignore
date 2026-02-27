@@ -11,3 +11,5 @@
 gha-creds-*.json
 /.update-logs/
 /.mcp-*
+
+/bin
