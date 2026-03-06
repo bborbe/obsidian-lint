@@ -15,6 +15,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 - Switch Claude Code review workflow to label-triggered activation
 - Update multiple dependency versions including bborbe packages, Google OSV scanner, and golang.org/x packages
 
+## v0.1.4
+
+- go mod update
+
 ## v0.1.3
 
 - Update GitHub workflows to v1 plugin system
