@@ -1,7 +1,12 @@
 ---
-status: approved
+status: completed
+summary: Ran make precommit — all tests pass, linting clean, no issues found; no code changes were needed.
+container: obsidian-lint-001-fix-tests-and-dod
+dark-factory-version: v0.59.5-dirty
 created: "2026-03-20T12:58:06Z"
 queued: "2026-03-20T12:58:06Z"
+started: "2026-03-20T15:12:05Z"
+completed: "2026-03-20T15:21:04Z"
 ---
 
 <summary>
