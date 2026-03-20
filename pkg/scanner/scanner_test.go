@@ -57,7 +57,7 @@ var _ = Describe("Scanner", func() {
 		It("returns .md files in nested directories", func() {
 			// Create nested structure
 			subDir := filepath.Join(tempDir, "folder1", "folder2")
-			Expect(os.MkdirAll(subDir, 0755)).To(Succeed())
+			Expect(os.MkdirAll(subDir, 0750)).To(Succeed())
 
 			mdFile1 := filepath.Join(tempDir, "root.md")
 			mdFile2 := filepath.Join(tempDir, "folder1", "nested.md")

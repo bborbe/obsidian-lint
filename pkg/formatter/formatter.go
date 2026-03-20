@@ -56,7 +56,7 @@ func (f *textFormatter) Format(
 		sb.WriteString(":\n")
 
 		for _, link := range links {
-			sb.WriteString(fmt.Sprintf("  Line %d: %s\n", link.Line, link.Link))
+			fmt.Fprintf(&sb, "  Line %d: %s\n", link.Line, link.Link)
 		}
 		sb.WriteString("\n")
 	}

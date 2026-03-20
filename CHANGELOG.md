@@ -8,12 +8,16 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
-## Unreleased
+## v0.2.0
 
 - Update Go to 1.26.0
 - Update GitHub Actions workflows to use checkout@v6
 - Switch Claude Code review workflow to label-triggered activation
 - Update multiple dependency versions including bborbe packages, Google OSV scanner, and golang.org/x packages
+- Upgrade golangci-lint from v1 to v2
+- Standardize Makefile: add .PHONY declarations, multiline trivy, mocks mkdir
+- Update .golangci.yml to v2 format
+- Setup dark-factory config
 
 ## v0.1.3
 
