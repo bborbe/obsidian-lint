@@ -1,7 +1,12 @@
 ---
-status: approved
+status: completed
+summary: All precommit checks passed on first run — no compilation errors, test failures, or linting issues found.
+container: obsidian-lint-002-fix-tests-and-dod
+dark-factory-version: v0.59.5-dirty
 created: "2026-03-20T14:24:31Z"
 queued: "2026-03-20T14:24:31Z"
+started: "2026-03-20T15:21:06Z"
+completed: "2026-03-20T15:27:32Z"
 ---
 
 <summary>
