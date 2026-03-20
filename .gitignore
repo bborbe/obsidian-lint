@@ -13,3 +13,6 @@ gha-creds-*.json
 /.mcp-*
 
 /bin
+/.dark-factory.lock
+/prompts/log
+/specs/log
