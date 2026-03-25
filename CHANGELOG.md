@@ -8,6 +8,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v0.2.3
+
+- fix: use go-version-file in CI to match go.mod version
+
 ## v0.2.2
 
 - chore: verify project health — all tests pass, linting clean, no vulnerabilities
