@@ -8,6 +8,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v0.2.4
+
+- Update multiple dependencies (docker, containerd, opentelemetry, go-git, etc.)
+- Remove k8s exclude block and replace k8s.io/kube-openapi replace directive
+- Add new replace directives for charmbracelet, ginkgolinter, and opencontainers
+- Bump golang.org/x/* packages (crypto, net, sys, term, text)
+
 ## v0.2.3
 
 - fix: use go-version-file in CI to match go.mod version
