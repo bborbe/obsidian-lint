@@ -8,6 +8,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v0.2.5
+
+- bump Go to 1.26.2
+- update golangci-lint to v2.11.4 and gosec to v2.25.0
+- upgrade bborbe/* libs (errors, sentry, service, run, time, etc.)
+- update osv-scanner to v2.3.5 and counterfeiter to v6.12.2
+- add new vuln ignore entries for bbolt, aws-sdk-go-v2
+
 ## v0.2.4
 
 - Update multiple dependencies (docker, containerd, opentelemetry, go-git, etc.)
