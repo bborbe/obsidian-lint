@@ -8,6 +8,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v0.2.8
+
+- bump Go toolchain to 1.26.4
+- update bborbe/service to v1.10.1, bborbe/sentry to v1.9.18
+- update onsi/ginkgo v2.29.0, gomega v1.41.0
+- update golang.org/x/net, x/sys, x/tools and other stdlib deps
+- exclude cloud.google.com/go v0.26.0 to resolve dependency conflict
+
 ## v0.2.7
 
 - bump go 1.26.2 → 1.26.3
