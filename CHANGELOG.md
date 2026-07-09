@@ -8,6 +8,12 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v0.2.9
+
+- bump go toolchain to 1.26.5
+- update bborbe/errors, sentry, service, argument, collection, math, parse, run, time, validation dependencies
+- update ginkgo, gomega, sentry-go, golang.org/x dependencies
+
 ## v0.2.8
 
 - bump Go toolchain to 1.26.4
