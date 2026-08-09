@@ -62,7 +62,9 @@ func (b *indexBuilder) Build(
 	})
 
 	if err != nil {
-		return nil, errors.Wrap(ctx, err, "walk vault failed")
+		// Already wrapped with the offending path inside the closure; wrapping
+		// again here would double-wrap.
+		return nil, err
 	}
 
 	// Parse and index aliases from markdown files
