@@ -76,7 +76,7 @@ func (v *validator) Validate(
 
 		links, err := v.parser.ParseFile(ctx, file)
 		if err != nil {
-			return nil, errors.Wrap(ctx, err, "parse file failed")
+			return nil, errors.Wrapf(ctx, err, "parse file %s failed", file)
 		}
 
 		for _, link := range links {

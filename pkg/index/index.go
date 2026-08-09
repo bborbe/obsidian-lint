@@ -47,7 +47,7 @@ func (b *indexBuilder) Build(
 	// Index all files in vault (for embeds to images, PDFs, etc.)
 	err := filepath.WalkDir(vaultPath, func(path string, d os.DirEntry, err error) error {
 		if err != nil {
-			return err
+			return errors.Wrapf(ctx, err, "walk entry %s failed", path)
 		}
 		if d.IsDir() {
 			return nil
