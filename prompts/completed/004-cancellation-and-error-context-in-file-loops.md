@@ -1,6 +1,12 @@
 ---
-status: draft
+status: completed
+summary: Added ctx.Done() cancellation guards at the top of both vault-file loops and improved index.go error messages to name the failing file
+execution_id: repo-exec-004-cancellation-and-error-context-in-file-loops
+dark-factory-version: v0.193.0
 created: "2026-08-09T19:15:00Z"
+queued: "2026-08-09T19:17:22Z"
+started: "2026-08-09T19:17:51Z"
+completed: "2026-08-09T19:20:05Z"
 ---
 
 <summary>

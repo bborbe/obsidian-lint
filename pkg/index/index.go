@@ -67,15 +67,21 @@ func (b *indexBuilder) Build(
 
 	// Parse and index aliases from markdown files
 	for _, file := range files {
+		select {
+		case <-ctx.Done():
+			return nil, errors.Wrap(ctx, ctx.Err(), "context cancelled")
+		default:
+		}
+
 		// #nosec G304 -- file paths come from scanner.Scan(), not user input
 		content, err := os.ReadFile(file)
 		if err != nil {
-			return nil, errors.Wrap(ctx, err, "read file failed")
+			return nil, errors.Wrapf(ctx, err, "read file %s failed", file)
 		}
 
 		aliases, err := b.parser.ParseAliases(ctx, string(content))
 		if err != nil {
-			return nil, errors.Wrap(ctx, err, "parse aliases failed")
+			return nil, errors.Wrapf(ctx, err, "parse aliases %s failed", file)
 		}
 
 		for _, alias := range aliases {
