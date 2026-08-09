@@ -68,9 +68,15 @@ func (v *validator) Validate(
 	}
 
 	for _, file := range files {
+		select {
+		case <-ctx.Done():
+			return nil, errors.Wrap(ctx, ctx.Err(), "context cancelled")
+		default:
+		}
+
 		links, err := v.parser.ParseFile(ctx, file)
 		if err != nil {
-			return nil, errors.Wrap(ctx, err, "parse file failed")
+			return nil, errors.Wrapf(ctx, err, "parse file %s failed", file)
 		}
 
 		for _, link := range links {

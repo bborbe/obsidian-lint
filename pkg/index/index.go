@@ -47,7 +47,7 @@ func (b *indexBuilder) Build(
 	// Index all files in vault (for embeds to images, PDFs, etc.)
 	err := filepath.WalkDir(vaultPath, func(path string, d os.DirEntry, err error) error {
 		if err != nil {
-			return err
+			return errors.Wrapf(ctx, err, "walk entry %s failed", path)
 		}
 		if d.IsDir() {
 			return nil
@@ -62,20 +62,28 @@ func (b *indexBuilder) Build(
 	})
 
 	if err != nil {
-		return nil, errors.Wrap(ctx, err, "walk vault failed")
+		// Already wrapped with the offending path inside the closure; wrapping
+		// again here would double-wrap.
+		return nil, err
 	}
 
 	// Parse and index aliases from markdown files
 	for _, file := range files {
+		select {
+		case <-ctx.Done():
+			return nil, errors.Wrap(ctx, ctx.Err(), "context cancelled")
+		default:
+		}
+
 		// #nosec G304 -- file paths come from scanner.Scan(), not user input
 		content, err := os.ReadFile(file)
 		if err != nil {
-			return nil, errors.Wrap(ctx, err, "read file failed")
+			return nil, errors.Wrapf(ctx, err, "read file %s failed", file)
 		}
 
 		aliases, err := b.parser.ParseAliases(ctx, string(content))
 		if err != nil {
-			return nil, errors.Wrap(ctx, err, "parse aliases failed")
+			return nil, errors.Wrapf(ctx, err, "parse aliases %s failed", file)
 		}
 
 		for _, alias := range aliases {
