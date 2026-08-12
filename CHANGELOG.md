@@ -8,6 +8,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- update Go to 1.26.5 and update dependencies
+
 ## v0.2.11
 
 - fix: Stop vault-file loops promptly when caller cancels context
