@@ -3,8 +3,8 @@ module github.com/bborbe/obsidian-lint
 go 1.26.6
 
 require (
-	github.com/bborbe/errors v1.5.17
-	github.com/bborbe/sentry v1.9.24
+	github.com/bborbe/errors v1.5.18
+	github.com/bborbe/sentry v1.9.25
 	github.com/bborbe/service v1.10.8
 	github.com/onsi/ginkgo/v2 v2.32.1
 	github.com/onsi/gomega v1.42.1
@@ -13,12 +13,12 @@ require (
 
 require (
 	github.com/Masterminds/semver/v3 v3.5.0 // indirect
-	github.com/bborbe/argument/v2 v2.12.34 // indirect
-	github.com/bborbe/collection v1.20.20 // indirect
-	github.com/bborbe/math v1.3.18 // indirect
-	github.com/bborbe/parse v1.10.19 // indirect
-	github.com/bborbe/run v1.9.34 // indirect
-	github.com/bborbe/time v1.27.8 // indirect
+	github.com/bborbe/argument/v2 v2.12.35 // indirect
+	github.com/bborbe/collection v1.20.21 // indirect
+	github.com/bborbe/math v1.3.19 // indirect
+	github.com/bborbe/parse v1.10.20 // indirect
+	github.com/bborbe/run v1.9.35 // indirect
+	github.com/bborbe/time v1.27.9 // indirect
 	github.com/bborbe/validation v1.4.19 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
