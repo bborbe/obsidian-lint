@@ -9,6 +9,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 ## Unreleased
+## v0.2.13
 
 - update Go to 1.26.6 and update dependencies
 
