@@ -9,6 +9,11 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * PATCH version when you make backwards-compatible bug fixes.
 
 ## Unreleased
+
+- chore: Move `gofmt -w` to run last in the `format` target so golines wrapping is normalized before the gofmt lint check
+- chore: Bump golangci-lint to v2.13.1 (fixes staticcheck `buildir` panic on Go 1.27 AST)
+- chore: Bump errcheck to v1.20.0 (fixes `package "context" without types` on Go 1.27)
+
 ## v0.2.13
 
 - update Go to 1.26.6 and update dependencies
