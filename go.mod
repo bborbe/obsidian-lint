@@ -1,11 +1,11 @@
 module github.com/bborbe/obsidian-lint
 
-go 1.26.6
+go 1.27.0
 
 require (
-	github.com/bborbe/errors v1.5.18
-	github.com/bborbe/sentry v1.9.25
-	github.com/bborbe/service v1.10.8
+	github.com/bborbe/errors v1.5.20
+	github.com/bborbe/sentry v1.9.26
+	github.com/bborbe/service v1.10.9
 	github.com/onsi/ginkgo/v2 v2.32.1
 	github.com/onsi/gomega v1.42.1
 	gopkg.in/yaml.v3 v3.0.1
@@ -13,13 +13,13 @@ require (
 
 require (
 	github.com/Masterminds/semver/v3 v3.5.0 // indirect
-	github.com/bborbe/argument/v2 v2.12.35 // indirect
-	github.com/bborbe/collection v1.20.21 // indirect
-	github.com/bborbe/math v1.3.19 // indirect
-	github.com/bborbe/parse v1.10.20 // indirect
-	github.com/bborbe/run v1.9.35 // indirect
-	github.com/bborbe/time v1.27.9 // indirect
-	github.com/bborbe/validation v1.4.19 // indirect
+	github.com/bborbe/argument/v2 v2.12.36 // indirect
+	github.com/bborbe/collection v1.20.23 // indirect
+	github.com/bborbe/math v1.3.21 // indirect
+	github.com/bborbe/parse v1.10.21 // indirect
+	github.com/bborbe/run v1.9.37 // indirect
+	github.com/bborbe/time v1.27.10 // indirect
+	github.com/bborbe/validation v1.4.21 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/getsentry/sentry-go v0.48.0 // indirect
