@@ -8,6 +8,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- chore: update github.com/bborbe/errors to v1.5.21, github.com/bborbe/sentry to v1.9.27
+
 ## v0.2.15
 
 - chore: update Go to 1.27.0 and update dependencies
