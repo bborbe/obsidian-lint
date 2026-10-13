@@ -8,7 +8,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
-## Unreleased
+## v0.4.2
 
 - chore: update Go to 1.27.2 and github.com/bborbe/errors to v1.6.2, github.com/bborbe/sentry to v1.10.3, github.com/onsi/gomega to v1.44.0
 
