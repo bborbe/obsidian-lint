@@ -3,9 +3,9 @@ module github.com/bborbe/obsidian-lint
 go 1.27.4
 
 require (
-	github.com/bborbe/errors v1.6.6
-	github.com/bborbe/sentry v1.10.7
-	github.com/bborbe/service v1.11.3
+	github.com/bborbe/errors v1.7.1
+	github.com/bborbe/sentry v1.11.1
+	github.com/bborbe/service v1.12.2
 	github.com/onsi/ginkgo/v2 v2.34.0
 	github.com/onsi/gomega v1.44.0
 	gopkg.in/yaml.v3 v3.0.1
@@ -13,13 +13,13 @@ require (
 
 require (
 	github.com/Masterminds/semver/v3 v3.5.0 // indirect
-	github.com/bborbe/argument/v2 v2.13.10 // indirect
-	github.com/bborbe/collection v1.21.7 // indirect
-	github.com/bborbe/math v1.4.20 // indirect
-	github.com/bborbe/parse v1.12.7 // indirect
-	github.com/bborbe/run v1.11.11 // indirect
-	github.com/bborbe/time v1.27.28 // indirect
-	github.com/bborbe/validation v1.5.9 // indirect
+	github.com/bborbe/argument/v2 v2.13.13 // indirect
+	github.com/bborbe/collection v1.21.9 // indirect
+	github.com/bborbe/math v1.4.21 // indirect
+	github.com/bborbe/parse v1.12.8 // indirect
+	github.com/bborbe/run v1.13.0 // indirect
+	github.com/bborbe/time v1.27.29 // indirect
+	github.com/bborbe/validation v1.5.11 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/getsentry/sentry-go v0.50.0 // indirect
@@ -33,7 +33,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/prometheus/client_golang v1.25.0 // indirect
 	github.com/prometheus/client_model v0.6.3 // indirect
-	github.com/prometheus/common v0.73.1 // indirect
+	github.com/prometheus/common v0.74.0 // indirect
 	github.com/prometheus/procfs v0.23.0 // indirect
 	go.yaml.in/yaml/v3 v3.0.6 // indirect
 	golang.org/x/mod v0.43.0 // indirect
